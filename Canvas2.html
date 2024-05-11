@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="canvas"
+      width="300"
+      height="200"
+      style="border: 1px solid black"
+    ></canvas>
+    <script>
+      let x = document.getElementById("canvas");
+      let y = x.getContext("2d");
+      y.beginPath();
+      y.arc(140, 95, 70, 0, 2 * Math.PI);
+      y.stroke();
+      y.closePath();
+      y.beginPath();
+      y.arc(140, 95, 60, 0, 2 * Math.PI);
+      y.stroke();
+      y.closePath();
+    </script>
+  </body>
+</html>

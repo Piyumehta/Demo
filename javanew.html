@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  1)An array of strings representing different colors. Use the join method to join these strings into a single string separated by dashes (-).
+        const colors = ["red", "green", "blue"];
+        a = colors.join('-')
+        console.log(a)
+
+        // 2) An empty array and use the push method to add three different fruits to it.Print the array after each addition.
+        const fruits = [];
+        fruits.push("apple");
+        console.log(fruits)
+        fruits.push("Mango");
+        console.log(fruits)
+        fruits.push("Chiku");
+        console.log(fruits)
+
+        // 3) Given an existing array of numbers, use the push method to add a new number to the end of the array.
+        const numbers = [1, 2, 3]
+        numbers.push(4)
+        console.log(numbers)
+
+        // 4) An array of five elements and use the pop method to remove the last element.Print the array before and after using pop.
+        const array = [1, 2, 3, 4, 5];
+        array.pop(5)
+        console.log(array)
+
+        // 5) Given an array representing a stack of plates, simulate the removal of the top plate using the pop method.
+        const plates = ["Plate 1", "Plate 2", "Plate 3"];
+        plates.shift()
+        console.log(plates)
+
+        //  6) Two arrays of numbers and use the concat method to concatenate them into a single array. Print the resulting array.
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+        // - Also use spread operator along with concat
+        b = array1.concat(array2)
+        console.log(b)
+
+
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        const colors = ["red", "green", "blue"];
+        a = colors.join('-')
+        console.log(a)
+
+        //2
+        const fruits = [];
+        fruits.push("mango");
+        console.log(fruits)
+        fruits.push('chiku')
+        console.log(fruits)
+        fruits.push("Orange")
+        console.log(fruits)
+
+        //3
+        const numbers = [1, 2, 3]
+        numbers.push(4)
+        console.log(numbers)
+
+        //4
+        const array = [1, 2, 3, 4, 5];
+        array.pop()
+        console.log(array)
+
+        //5
+        const plates = ["plate1", "plate2", "plate3"];
+        plates.shift()
+        console.log(plates)
+
+        //6-spread
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+        b = array1.concat(array2)
+        console.log(b)
+
+        //7-splice method
+        const num7 = [1, 2, 3, 4, 5]
+        num7.splice(2, 2)
+        console.log(num7)
+
+        //8
+        const colors1 = ["red", "green", "blue", "yellow", "orange"]
+        colors1.splice(1, 2, "white", "black")
+        console.log(colors1)
+
+        //9
+        const num = [1, 2, 3, 4, 5];
+        num.splice(2, 0, 7, 8, 9)
+        console.log(num)
+
+        //10
+        const tasks = ["task1", "task2", "task3", "task4", "task5"];
+        b = tasks.slice(0, 3)
+        console.log(b)
+        tasks.splice(0, 3)
+        console.log(tasks)
+
+        //11
+        const num1 = [1, 2, 3, 4, 5];
+        num1.splice(2)
+        console.log(num1);
+
+        //12
+        const char = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        c = char.slice(2, 6)
+        console.log(c)
+
+        //13
+        const names = ['Alice', 'Bob', 'Charlie', 'David'];
+        n = names.slice(1, 4)
+        console.log(n)
+
+        //14
+        const num2 = [2, 4, 6, 8, 10, 12]
+        n2 = num2.slice(1, 5)
+        console.log(n2)
+
+        //15
+        n3 = num2.slice(3)
+        console.log(n3)
+
+        //16
+        const num3 = [1, 2, 3, 4, 5]
+        const fe = num3.forEach((val, index) => {
+            return val * 2;
+        })
+        console.log(fe)
+
+        //17
+        const names2 = ["Alice", "Bob", "Charlie", "David"];
+
+        names2.forEach(name => {
+            console.log(Hello, ${name}!);
+        });
+
+        //18
+        const studentsg = [
+            { name: "Alice", grade: 85 },
+            { name: "Bob", grade: 92 },
+            { name: "Charlie", grade: 78 },
+            { name: "David", grade: 88 }
+        ];
+
+        let total = 0;
+        studentsg.forEach(val => {
+            total = total + val.grade;
+        });
+
+        const avg = total / studentsg.length;
+        console.log(avg);
+
+        // 19
+        const numbers19 = [5, -3, 10, -8, 2, 7, -1];
+        let sum2 = 0;
+
+        numbers19.forEach(val => {
+            if (val > 0) {
+                sum2=sum2+ val;
+            }
+        });
+
+        console.log(sum2);
+
+
+
+
+
+        20
+        const num5 = [1, 2, 3, 4, 5];
+        const m = num5.map((val, index) => {
+            return val * 2;
+        })
+        console.log(m);
+
+        //21
+        const products = [
+            { id: 1, name: "iPhone", price: 999 },
+            { id: 2, name: "Samsung Galaxy", price: 899 },
+            { id: 3, name: "Google Pixel", price: 799 }
+        ];
+        const pr = products.map((val) => {
+            return val.name;
+        })
+        console.log(pr)
+
+        22
+
+        const products1 = [
+            { name: "Laptop", price: 999, quantity: 2 },
+            { name: "Phone", price: 799, quantity: 3 },
+            { name: "Tablet", price: 499, quantity: 1 }
+        ];
+        const pr1 = products1.map((val) => {
+            return val.price * val.quantity;
+        })
+        console.log(pr1)
+
+        //23
+        const employees2 = [
+            { name: "Alice", department: "HR", salary: 60000 },
+            { name: "Bob", department: "Finance", salary: 45000 },
+            { name: "Charlie", department: "IT", salary: 70000 }
+        ];
+        const emp2=employees2.map((val)=>{
+            return val.salary > 50000
+        })
+        console.log(emp2)
+        24
+        const employees = [
+            { id: 1, name: "Alice", skills: ["JavaScript", "HTML", "CSS"] },
+            { id: 2, name: "Bob", skills: ["Python", "Java"] },
+            { id: 3, name: "Charlie", skills: ["React", "Node.js", "MongoDB", "Express"] }
+        ];
+        const emp = employees.map((val) => {
+            return {
+                name: val.name,
+                numofskills: val.skills.length
+            };
+        })
+        console.log(emp);
+
+        25
+        const num6 = [5, 12, 3, 20, 8, 15]
+        const f = num6.filter((val, index) => {
+            return val >= 10;
+        })
+        console.log(f)
+
+        26
+
+        const students = [
+            { name: 'Alice', age: 20 },
+            { name: 'Bob', age: 16 },
+            { name: 'Charlie', age: 18 }
+        ]
+        const f1 = students.filter((val) => {
+            return val.age > 18;
+        })
+        console.log(f1)
+
+        27
+        const users = [
+            { name: "Alice", age: 20, email: "alice@example.com" },
+            { name: "Bob", age: 30, email: "bob@example.com" },
+            { name: "Charlie", age: 22, email: "charlie@example.com" }
+        ];
+        const us = users.filter((val) => {
+            return val.age < 25;
+        })
+        console.log(us);
+
+        28
+        const products2 = [
+            { name: "Laptop", price: 999, category: "Electronics" },
+            { name: "T-shirt", price: 15, category: "Clothing" },
+            { name: "Headphones", price: 80, category: "Electronics" }
+        ];
+        const pr2 = products2.filter((val) => {
+            return val.price > 100;
+        })
+        console.log(pr2);
+
+        29
+        const orders = [
+            { id: 1, status: "completed", total: 50 },
+            { id: 2, status: "pending", total: 100 },
+            { id: 3, status: "completed", total: 80 }
+        ];
+        const or = orders.filter((val) => {
+            return val.status != "completed";
+        })
+        console.log(or);
+
+        30
+        const employees3 = [
+            { name: "Alice", department: "HR", salary: 60000 },
+            { name: "Bob", department: "Finance", salary: 45000 },
+            { name: "Charlie", department: "IT", salary: 70000 }
+        ];
+        const emp3 = employees3.filter((val) => {
+            return val.department == "HR";
+        })
+        console.log(emp3);
+
+        //31
+        const students3 = [
+            { name: "Alice", age: 20, grade: 85 },
+            { name: "Bob", age: 16, grade: 60 },
+            { name: "Charlie", age: 18, grade: 75 }
+        ];
+        const std = students3.filter((val) => {
+            return val.age > 18 &&
+                val.grade < 70
+        });
+        console.log(std);
+
+        //32
+        const books = [
+            { title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+            { title: "To Kill a Mockingbird", author: "Harper Lee" },
+            { title: "The Catcher in the Rye", author: "J.D. Salinger" }
+        ];
+        const bk = books.filter((val) => {
+            return val.author.length > 10
+        })
+        console.log(bk);
+
+        //33
+        const numbers6 = [5, 12, 3, 20, 8, 15]
+        const num9 = numbers6.find((val, index) => {
+            return val > 10;
+        });
+        console.log(num9);
+
+        // //34
+        const users2 = [
+            { name: "Alice", age: 25 },
+            { name: "Bob", age: 30 },
+            { name: "Charlie", age: 22 }
+        ];
+        const na = users2.find((val) => {
+            return val.name == "Alice";
+        })
+        console.log(na)
+
+        //35
+        const products3 = [
+            { name: "Laptop", price: 999 },
+            { name: "Mouse", price: 20 },
+            { name: "Keyboard", price: 80 }
+        ];
+        const pr3=products3.find((val)=>{
+            return val.price>50 && val.price<100
+        })
+        console.log(pr3);
+
+        //36
+        const numbers5 = [1, 2, 3, 4, 5];
+        const num10=numbers5.find((val)=>{
+            return val==5
+        })
+        console.log(num10)
+
+        //37
+        //const store= ["laptop", "phone", "tablet", "headphones"]
+        //38
+        const studentIDs = [101, 102, 103, 104];
+        const id = studentIDs.find((val) => {
+            return val == 102;
+        })
+        console.log(id)
+
+        //39
+        const numbers8 = [1, 2, 3, 4, 5];
+        const num8=numbers8.reduce((a,b)=>{
+            return a+b
+        });
+        console.log(num8);
+
+        //40
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+    </script>
+</body>
+
+</html>

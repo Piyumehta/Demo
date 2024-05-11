@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    const firstname="miten";
+    const lname="soni";
+
+    const students={
+        fname:"mitesh",
+        lname:"soni",
+        roll:[1,2,3,4,5],
+        subjects:{
+            easy:"English",
+            medium:"Maths",
+            difficult:["java","js"]
+        }
+    }
+    students.fname="jenish"
+    console.log(students)
+
+    const rollNo=[1,2,3,4,5]
+    rollNo[1]=10
+    console.log(rollNo)
+
+    const newStudents={
+        ...students
+    }
+    newStudents.faname="karan"
+
+    console.log("STUDENTS",students)
+    console.log("NewStudents",newStudents)
+
+    </script>
+</body>
+</html>

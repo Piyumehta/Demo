@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="error" style="color:red"></p>
+    Name:
+    <input type="text" name="fname" placeholder="First Name" id="fname" /><br /><br />
+    Email: <input type="email" name="email" placeholder="Enter E-mail" id="email" /><br /><br />
+    Password : <input type="text" name="password" placeholder="Enter Password" id="password" /><br /><br />
+    <button type="submit" id="submit">Submit</button>
+
+    <script>
+
+        const error = document.getElementById("error");
+        const fname = document.getElementById("fname");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const btn = document.getElementById("submit");
+
+        const validateForm = () => {
+            let messages = [];
+            if (fname.value === "") {
+                messages.push("Please enter First Name");
+            }
+            if (email.value === "") {
+                messages.push("Please enter email");
+            } else if (!email.value.includes("@")) {
+                messages.push("Enter valid email");
+            }
+
+            if (password.value === "") {
+                messages.push("Please Enter password");
+            } else if (password.value.length < 6) {
+                messages.push("Enter more than 6 characters");
+            } else if (
+                !password.value.includes("@") &&
+                !password.value.includes("!") &&
+                !password.value.includes("#")
+            ) {
+                messages.push("Please enter special characters");
+            }
+
+            if (messages.length > 0) {
+                error.innerHTML = messages.join("<br/>");
+            } else {
+                error.innerHTML = "";
+            }
+        };
+
+        btn.addEventListener("click", validateForm);
+        password.addEventListener("input", validateForm);
+        fname.addEventListener("input", validateForm);
+        email.addEventListener("input", validateForm);
+
+    </script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+const employee = {
+    name: "Piyu",
+    position: "Developer",
+    language: "English",
+  };
+  
+  console.log(employee.name, employee.position, employee.language); 
+  employee.name = "Rahul"; 
+  console.log(" ");
+  console.log(employee.name);
+  
+  const employee2 = {
+    ...employee,
+  };
+  
+  employee2.name = "Ram";
+  console.log(employee.name);
+  
+  const student = {
+    fname: "Piyu",
+    lname: "Mehta",
+    rollNo: 6006,
+    subject: {
+      easy: ["English", "Hindi", "Gujarati"],
+      medium: ["Maths", "javascript"],
+    },
+  };
+  console.log(" ");
+  console.log(student.subject.medium[0], student.subject.easy[2]);
+  student.subject.easy[0] = "Node.js"; 
+  console.log(" ");
+  console.log(student.subject.easy[0]);
+  student.subject.medium.push("Java"); 
+  console.log(" ");
+  console.log(student.subject.medium[2]);
+  
+  const numbers = [10, 20, 30, 40];
+  
+  console.log(" ");
+  console.log(numbers[1], numbers[3]); 
+  numbers[2] = 80; 
+  console.log(" ");
+  console.log(numbers[2]);
+  
+  let a = "5";
+  console.log(" ");
+  console.log(a, typeof a);
+  
+  a = Number(a);
+  console.log(a, typeof a); 
+ </script> 
+</body>
+</html>

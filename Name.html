@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Enter Name: </label>
+    <input type="text" id="find" name="find"><br><br>
+    <input type="button" value="Find" onclick="find()">
+    <div id="result"></div>
+
+    <script>
+        function find() {
+            const get = document.getElementById("find").value;
+            const arr = [
+               
+                { name: "Milan", age: 21},
+                { name: "Rutvik", age: 18},
+                { name: "ram", age: 17},
+            ];
+
+            for (let i = 0; i < arr.length; i++) {
+                if (get === arr[i].name) {
+                    document.getElementById("result").innerHTML = arr[i].name + " is " + arr[i].age + " year old";
+                    return;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
